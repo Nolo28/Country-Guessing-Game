@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Country Guessing Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-div">
+        <h1>Country Guessing Game</h1>
+        <img
+          class="cogwheel-icon"
+          src="images/setting.png"
+          alt="settings cogwheel icon"
+        />
+      </div>
+      <hr class="title-hr" />
+
+      <div class="picture-div">
+        <figure>
+          <img
+            src="images/hemisphere.png"
+            alt="Globe image displaying equator line"
+          />
+          <figcaption>Hemisphere</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/continent.png"
+            alt="Image showing the continent Australia"
+          />
+          <figcaption>Continent</figcaption>
+        </figure>
+
+        <figure>
+          <img src="/images/population.png" alt="Image showcasing population" />
+          <figcaption>Population</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/distance.png" alt="Picture showcasing distance" />
+          <figcaption>Distance</figcaption>
+        </figure>
+      </div>
+
+      <div class="background-img"></div>
+
+      <hr />
+      <div class="guess-div">
+        <button class="give-up">
+          <img src="images/question-mark.png" alt="Question mark" />
+        </button>
+
+        <form class="guess-form" method="POST" action="/" autocomplete="off">
+          <div class="country-guess-border">
+            <input
+              class="guess-input"
+              type="text"
+              name="country guess"
+              placeholder="Guess A Country"
+            />
+          </div>
+          
+          <div class="submit-div">
+            <button class="enter-button" type="submit">
+              <img src="images/enter.png" alt="Enter button" />
+            </button>
+
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

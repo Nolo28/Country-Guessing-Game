@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #303030;
+  color: #fafafa;
+}
+
+h1 {
+  font-family: "Noto Serif", serif;
+  display: inline;
+  margin-right: 20px;
+  color: #fafafa;
+  font-size: 28px;
+}
+
+hr {
+  max-width: 25vw;
+  margin: auto; /* change at different screen sizes */
+}
+
+.title-div {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60%;
+}
+
+.cogwheel-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.cogwheel-icon:hover {
+  cursor: pointer;
+}
+
+.picture-div {
+  margin: 20px auto 0 auto;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.picture-div figure {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.picture-div figcaption {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 14px;
+  margin-top: 8px;
+  letter-spacing: 1px;
+}
+
+.picture-div img {
+  align-self: center;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.background-img {
+  min-height: 45vh;
+  background-image: url("..//images/worldmap.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%; /* change at different screen sizes */
+}
+
+.guess-div {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.guess-div button {
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+}
+
+.guess-div button:hover {
+  cursor: pointer;
+}
+
+.guess-div img {
+  width: 25px;
+  height: 25px;
+}
+
+.give-up {
+  background: #2e2e2e;
+  border: 1px solid white;
+}
+
+.give-up:hover {
+  background: #474747;
+}
+
+.guess-form {
+  display: flex;
+  gap: 20px;
+}
+
+.country-guess-border {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.guess-input {
+  height: 30px;
+  min-width: 220px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.452);
+  background: #303030;
+  color: white;
+  text-align: center;
+  font-family: "sans-serif";
+}
+
+.guess-input::placeholder {
+  color: white;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.guess-input:focus {
+  transition: 1s;
+  border-color: white;
+  outline: none;
+}
+
+.enter-button {
+  background: #6b6b6b;
+  border: none;
+}
+
+.submit-div {
+  align-self: center;
+}
